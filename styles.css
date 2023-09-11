@@ -1,0 +1,132 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: auto 400px;
+    width: 870px;
+    border-radius: 10px;
+    overflow:hidden;
+    background-color: white;
+}
+
+.dp-img {
+    height: 600px;
+}
+
+.perfume {
+    margin-top: 3em;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    letter-spacing: 7px;
+}
+
+.name {
+    font-size: 3em;
+    font-family: Fraunces, serif;
+    margin-right: 75px;
+    line-height: 0.95em;
+}
+
+.desc {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-right: 75px;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 50% 25%;
+    height: 100px;
+}
+
+.new-price {
+    font-size: 3em;
+    font-family: Fraunces, serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    padding-top: 50px;
+    text-align: center;
+    max-height: 200px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Montserrat, sans-serif;
+}
+
+.button {
+    width: 200px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: white;
+    padding: 10px 75px;
+    height: 50px;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%);
+}
+
+.block-text {
+    display: grid;
+    grid-template-rows: 50px 195px 115px 135px 50px;
+}
+
+.img-tmp {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .block {
+        display: flex;
+        width: 500px;
+        height: 840px;
+        border-radius: 10px;
+        background-color: white;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .dp-img {
+        position: absolute;
+        width: 500px;
+        height: 750px;
+        top: -40%;
+    }
+
+    .img-tmp {
+        overflow: hidden;
+        height: 350px;
+        width: 500px;
+        position: relative;
+    }
+
+    .block-text {
+        display: grid;
+        grid-template-rows: 50px 140px 120px 125px 80px;
+        padding-left: 50px;
+    }
+    
+    .name {
+        margin-right: 10px;
+    }
+
+    .button {
+        padding: 5px 100px;
+    }
+}
