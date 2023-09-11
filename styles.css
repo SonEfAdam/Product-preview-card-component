@@ -90,7 +90,7 @@ body {
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 375px) {
     .block {
         display: flex;
         width: 500px;
@@ -118,7 +118,7 @@ body {
 
     .block-text {
         display: grid;
-        grid-template-rows: 50px 140px 120px 125px 80px;
+        grid-template-rows: 50px 180px 120px 125px 80px;
         padding-left: 50px;
     }
     
